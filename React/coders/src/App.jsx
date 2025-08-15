@@ -1,15 +1,34 @@
-import React from 'react'
-import Image from "./assets/independence.jpg"
-import Hero from './components/Hero'
-import Middle from './components/Middle'
+import React from "react";
+import Hero from "./components/Hero";
+import Middle from "./components/Middle";
+import Reels from "./components/Reels";
+import About from "./components/About";
+import Contribute from "./components/Contribute";
 
 const App = () => {
-  return (
-    <div>
-       <Hero/>
-       <Middle/>
-    </div>
-  )
-}
+  
+  const path = window.location.pathname;
 
-export default App
+
+  if (path === "/reels") {
+    return <Reels />;
+  }
+
+  if (path === "/about") {
+    return <About />;
+  }
+
+   if (path === "/contribute") {
+    return <Contribute />;
+  }
+
+ 
+  return (
+    <>
+      <Hero />
+      <Middle />
+    </>
+  );
+};
+
+export default App;

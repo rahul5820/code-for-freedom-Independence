@@ -1,15 +1,79 @@
-import React from 'react'
+import React, { useState } from "react";
 
 const Navbar = () => {
-  return (
-    <div className='flex justify-between items-center  h-20 bg-gradient-to-b from-orange-500 via-white to-green-600 font-bold pl-10 pr-10'>
-      <a href='/' className='text-orange-600'>Project Tiranga </a>
-      <a href='/' className='text-black'>HOME</a>  
-      <a href='/about' className='text-black'>About</a>  
-      <a href='/reels' className='text-black'>Reels</a>  
-      <a href='/contrubute' className='text-black'>Contribute</a>  
-    </div>
-  )
-}
+  const [isOpen, setIsOpen] = useState(false);
 
-export default Navbar
+  return (
+    <nav className="bg-gradient-to-b from-orange-500 via-white to-green-600 font-bold">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-20">
+          <a href="/" className="text-orange-600 text-xl">
+            Project Tiranga
+          </a>
+          <div className="hidden md:flex space-x-6">
+            <a href="/" className="text-black hover:text-orange-600">
+              HOME
+            </a>
+            <a href="/about" className="text-black hover:text-orange-600">
+              About
+            </a>
+            <a href="/reels" className="text-black hover:text-orange-600">
+              Reels
+            </a>
+            <a href="/contribute" className="text-black hover:text-orange-600">
+              Contribute
+            </a>
+          </div>
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-black focus:outline-none"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                {isOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      {isOpen && (
+        <div className="md:hidden px-4 pb-4 space-y-2">
+          <a href="/" className="block text-black hover:text-orange-600">
+            HOME
+          </a>
+          <a href="/about" className="block text-black hover:text-orange-600">
+            About
+          </a>
+          <a href="/reels" className="block text-black hover:text-orange-600">
+            Reels
+          </a>
+          <a href="/contribute" className="block text-black hover:text-orange-600">
+            Contribute
+          </a>
+        </div>
+      )}
+    </nav>
+  );
+};
+
+export default Navbar;
