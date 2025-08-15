@@ -12,14 +12,14 @@ const Reels = () => {
            Best Independence Day Reels
         </h2>
 
-        {/* Grid responsive layout */}
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ">
           {reels.map((fileName, index) => (
             <div
               key={index}
               className="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
             >
-              {/* 9:16 aspect ratio */}
+            
               <div className="aspect-[9/16] border-3 border-black">
                 <video
                   className="w-full h-full object-cover"
