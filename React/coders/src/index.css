@@ -1,2 +1,16 @@
 @import "tailwindcss";
 
+/* Add this CSS to make the navbar responsive */
+
+@media screen and (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .flex a {
+    margin: 0.5rem 0;
+  }
+}

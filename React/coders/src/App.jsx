@@ -1,10 +1,13 @@
 import React from 'react'
 import Image from "./assets/independence.jpg"
-import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import Middle from './components/Middle'
+
 const App = () => {
   return (
     <div>
-       <Navbar/>
+       <Hero/>
+       <Middle/>
     </div>
   )
 }
