@@ -1,4 +1,4 @@
-# 🇮🇳 Project Tiranga — Independence Day Special
+# Code For Freedom - Independence Day Special
 
 A collaborative **Independence Day** project 🫡 built by **Consistent Coders**, featuring **two versions**:
 - **React**
@@ -6,17 +6,6 @@ A collaborative **Independence Day** project 🫡 built by **Consistent Coders**
 
 Anyone can contribute in their preferred tech stack — because freedom means *choice*, even in coding! 💻
 
----
-
-## 📂 Project Structure
-
-code-for-freedom/
-│
-├── react-version/ # For React developers
-└── html-css-js/ # For HTML, CSS, JavaScript lovers
-
-
----
 
 ## 🚀 How to Contribute
 
