@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Middle from "./components/Middle";
 import Reels from "./components/Reels";
 import About from "./components/About";
+
 import Contribute from "./components/Contribute";
 
 const App = () => {
