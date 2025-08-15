@@ -12,7 +12,7 @@ const Navbar = () => {
           </a>
           <div className="hidden md:flex space-x-6">
             <a href="/" className="text-black hover:text-orange-600">
-              HOME
+              Home
             </a>
             <a href="/about" className="text-black hover:text-orange-600">
               About
